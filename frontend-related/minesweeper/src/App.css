@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: #282c34;
+}
+
+.App::before {
+  content: "";
+  display: table;
+}
+
+.App .box {
+  margin: 2rem auto 0 auto;
+  max-width: 400px;
+  box-shadow: 0 0 4px 2px red;
+  padding: 1rem;
+}
+
+.Header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+}
+
+.Header > img {
+  height: 2rem;
+  animation: bomb-spin infinite 20s linear;
+}
+
+.Header .title {
+  font-size: 2rem;
+  display: inline-block;
+  height: 2rem;
+  line-height: 1;
+  margin-right: 1rem;
+}
+
+@keyframes bomb-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Control {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.Control .flagCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Control .flagCounter > img {
+  width: 1rem;
+  color: #555;
+}
+
+.Panel {
+  margin-top: 1rem;
+}
+
+.Panel .Row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.Panel .cell {
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: #fff;
+  line-height: 30px;
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+}
+
+.cell.open {
+  border: 2px solid red;
+}
+

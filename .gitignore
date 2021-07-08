@@ -1,0 +1,11 @@
+.gradle
+build
+out
+.DS_store
+
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
